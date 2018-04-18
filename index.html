@@ -56,14 +56,14 @@
             <div id="level5"></div>
         </div>
     </div>
-    <div id="description">A snowball poem created by Kimberly Yu for <a href="http://nickm.com/classes/the_word_made_digital/2018_spring/" target="_blank">CMS.609</a></div>
+    <div id="description">A modified snowball poem created by Kimberly Yu for <a href="http://nickm.com/classes/the_word_made_digital/2018_spring/" target="_blank">CMS.609</a></div>
 </body>
 <script type="text/javascript">
-    level_1 = ['ant', 'bat', 'bee', 'bug', 'chick', 'cub', 'fly', 'foal', 'joey', 'kid', 'kit', 'larva', 'nit', 'pup', 'rat', 'shrew', 'spat', 'stot', 'wren']
-    level_2 = ['duck', 'owl', 'dog', 'fox', 'frog', 'koala', 'toad', 'turtle']
-    level_3 = ['camel', 'deer', 'goat', 'llama', 'horse', 'sheep', 'walrus', 'zebra']
-    level_4 = ['anteater', 'bear', 'cheetah', 'giraffe', 'kangaroo', 'leopard', 'lion', 'moose', 'tiger']
-    level_5 = ['elephant', 'hippopotamus', 'dinosaur', 'rhinoceros', 'crocodile', 'cassowary']
+    level_1 = ['ant', 'bat', 'bee', 'bug', 'chick', 'cub', 'fly', 'foal', 'joey', 'kid', 'kit', 'larva', 'nit', 'pup', 'rat', 'shrew', 'jay', 'wren', 'duck', 'gecko', 'frog'] /* 3 - 5 letters */
+    level_2 = ['goose', 'hawk', 'poodle', 'beagle', 'lemur', 'koala', 'toad', 'turtle', 'beaver'] /* 4 - 6 letters */
+    level_3 = ['camel', 'llama', 'horse', 'sheep', 'walrus', 'zebra', 'donkey', 'gorilla'] /* 5 - 7 letters */
+    level_4 = ['anteater', 'grizzly', 'cheetah', 'giraffe', 'kangaroo', 'leopard', 'panther', 'tiger'] /* 5 - 8 letters*/
+    level_5 = ['elephant', 'hippopotamus', 'dinosaur', 'rhinoceros', 'crocodile', 'cassowary'] /* >8 letters */
 
     function getRandomElements(array, n) {
         const shuffled = array.sort(() => .5 - Math.random()); // shuffle  
@@ -75,8 +75,8 @@
         return words.slice(0, -1);
     }
 
-    document.getElementById('level1').innerHTML = getRandomElements(level_1, 10);
-    document.getElementById('level2').innerHTML = getRandomElements(level_2, 8);
+    document.getElementById('level1').innerHTML = getRandomElements(level_1, 12);
+    document.getElementById('level2').innerHTML = getRandomElements(level_2, 7);
     document.getElementById('level3').innerHTML = getRandomElements(level_3, 6);
     document.getElementById('level4').innerHTML = getRandomElements(level_4, 4);
     document.getElementById('level5').innerHTML = getRandomElements(level_5, 2);
